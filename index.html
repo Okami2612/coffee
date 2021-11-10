@@ -1,376 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Coffee Shop</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header Section -->
     <header class="header">
-        <a href="#" class="logo">Coffee Shop</a>
-        <nav class="navbar">
-            <a href="">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#product">Product</a>
-            <a href="#review">Review</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="header-icon">
-            <i class="uil uil-search" id="search-btn"></i>
-            <i class="uil uil-shopping-cart" id="cart-btn"></i>
-            <i class="uil uil-bars" id="menu-btn"></i>
+      <a href="#" class="logo">Coffee Shop</a>
+      <nav class="navbar">
+        <a href="">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#product">Product</a>
+        <a href="#review">Review</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-icon">
+        <!-- <i class="uil uil-search" id="search-btn"></i>
+        <i class="uil uil-shopping-cart" id="cart-btn"></i> -->
+        <i class="uil uil-bars" id="menu-btn"></i>
+      </div>
+      <div class="search-form">
+        <input
+          type="search"
+          name=""
+          id="search-box"
+          placeholder="search here ..."
+        />
+        <label for="search-box" class="uil uil-search"></label>
+      </div>
+      <!-- <div class="cart-item-container">
+        <div class="cart-item">
+          <i class="uil uil-times"></i>
+          <img src="/img/arabica.png" alt="" />
+          <div class="content">
+            <h3>Arabica</h3>
+            <div class="price">VND 100.000</div>
+          </div>
         </div>
-        <div class="search-form">
-            <input type="search" name="" id="search-box" placeholder="search here ...">
-            <label for="search-box" class="uil uil-search"></label>
+        <div class="cart-item">
+          <i class="uil uil-times"></i>
+          <img src="img/robusta.jpg" alt="" />
+          <div class="content">
+            <h3>Robusta</h3>
+            <div class="price">VND 100.000</div>
+          </div>
         </div>
-        <div class="cart-item-container">
-            <div class="cart-item">
-                <i class="uil uil-times"></i>
-                <img src="/img/arabica.png" alt="">
-                <div class="content">
-                    <h3>Arabica</h3>
-                    <div class="price">VND 100.000/-<< /div>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <i class="uil uil-times"></i>
-                    <img src="img/robusta.jpg" alt="">
-                    <div class="content">
-                        <h3>Robusta</h3>
-                        <div class="price">VND 100.000/-<< /div>
-                        </div>
-                    </div>
-                    <div class="cart-item">
-                        <i class="uil uil-times"></i>
-                        <img src="img/culi.jpg" alt="">
-                        <div class="content">
-                            <h3>Culi</h3>
-                            <div class="price">VND 100.000/-<< /div>
-                            </div>
-                        </div>
-                        <div class="cart-item">
-                            <i class="uil uil-times"></i>
-                            <img src="img/mocha.jpg" alt="">
-                            <div class="content">
-                                <h3>Mocha</h3>
-                                <div class="price">VND 100.000/-<< /div>
-                                </div>
-                            </div>
-                            <a href="" class="check-btn btns">Check now</a>
-                        </div>
+        <div class="cart-item">
+          <i class="uil uil-times"></i>
+          <img src="img/culi.jpg" alt="" />
+          <div class="content">
+            <h3>Culi</h3>
+            <div class="price">VND 100.000</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="uil uil-times"></i>
+          <img src="img/mocha.jpg" alt="" />
+          <div class="content">
+            <h3>Mocha</h3>
+            <div class="price">VND 100.000</div>
+          </div>
+        </div>
+        <a href="" class="check-btn btns">Check now</a>
+      </div> -->
     </header>
 
     <!-- Home Section -->
     <section class="home" id="home">
-        <div class="content">
-            <h3>Cốc Cafe đầy cảm hứng mỗi buổi sáng.</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, </p>
-            <a href="" class="btns">Get your now</a>
-        </div>
+      <div class="content">
+        <h3>Cốc Cafe đầy cảm hứng mỗi buổi sáng.</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s,
+        </p>
+        <a href="" class="btns">Get your now</a>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <div class="section-title">
-            <h1><span>About </span>us</h1>
+      <div class="section-title">
+        <h1><span>About </span>us</h1>
+      </div>
+      <div class="row">
+        <div class="img">
+          <img src="img/hot-coffee-cup.jpg" alt="" />
         </div>
-        <div class="row">
-            <div class="img">
-                <img src="img/hot-coffee-cup.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Điều gì làm cho cà phê trở nên đặc biệt</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,</p>
-                <a href="" class="btns">Learn more</a>
-            </div>
+        <div class="content">
+          <h3>Điều gì làm cho cà phê trở nên đặc biệt</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <a href="" class="btns">Learn more</a>
         </div>
+      </div>
     </section>
 
     <!-- Menu Section -->
     <section class="menu" id="menu">
-        <div class="section-title">
-            <h1><span>Menu </span></h1>
+      <div class="section-title">
+        <h1><span>Menu </span></h1>
+      </div>
+      <div class="box-grid">
+        <div class="box">
+          <img src="img/arabica.png" alt="" />
+          <h3>Arabica</h3>
+          <div class="price">VND 100.000 <span>120.000</span></div>
+          <a href="" class="btns">Thêm vào giỏ hàng</a>
         </div>
-        <div class="box-grid">
-            <div class="box">
-                <img src="img/arabica.png" alt="">
-                <h3>Arabica</h3>
-                <div class="price">VND 100.000 <span>120.000</span></div>
-                <a href="" class="btns">Thêm vào giỏ hàng</a>
-            </div>
-            <div class="box">
-                <img src="img/robusta.jpg" alt="">
-                <h3>Robusta</h3>
-                <div class="price">VND 100.000 <span>120.000</span></div>
-                <a href="" class="btns">Thêm vào giỏ hàng</a>
-            </div>
-            <div class="box">
-                <img src="img/culi.jpg" alt="">
-                <h3>Culi</h3>
-                <div class="price">VND 100.000 <span>120.000</span></div>
-                <a href="" class="btns">Thêm vào giỏ hàng</a>
-            </div>
-            <div class="box">
-                <img src="img/mocha.jpg" alt="">
-                <h3>Mocha</h3>
-                <div class="price">VND 100.000 <span>120.000</span></div>
-                <a href="" class="btns">Thêm vào giỏ hàng</a>
-            </div>
-            <div class="box">
-                <img src="img/arabica.png" alt="">
-                <h3>Arabica</h3>
-                <div class="price">VND 100.000 <span>120.000</span></div>
-                <a href="" class="btns">Thêm vào giỏ hàng</a>
-            </div>
-            <div class="box">
-                <img src="img/culi.jpg" alt="">
-                <h3>Culi</h3>
-                <div class="price">VND 100.000 <span>120.000</span></div>
-                <a href="" class="btns">Thêm vào giỏ hàng</a>
-            </div>
-            <div class="box">
-                <img src="img/mocha.jpg" alt="">
-                <h3>Mocha</h3>
-                <div class="price">VND 100.000 <span>120.000</span></div>
-                <a href="" class="btns">Thêm vào giỏ hàng</a>
-            </div>
+        <div class="box">
+          <img src="img/robusta.jpg" alt="" />
+          <h3>Robusta</h3>
+          <div class="price">VND 100.000 <span>120.000</span></div>
+          <a href="" class="btns">Thêm vào giỏ hàng</a>
         </div>
+        <div class="box">
+          <img src="img/culi.jpg" alt="" />
+          <h3>Culi</h3>
+          <div class="price">VND 100.000 <span>120.000</span></div>
+          <a href="" class="btns">Thêm vào giỏ hàng</a>
+        </div>
+        <div class="box">
+          <img src="img/mocha.jpg" alt="" />
+          <h3>Mocha</h3>
+          <div class="price">VND 100.000 <span>120.000</span></div>
+          <a href="" class="btns">Thêm vào giỏ hàng</a>
+        </div>
+        <div class="box">
+          <img src="img/arabica.png" alt="" />
+          <h3>Arabica</h3>
+          <div class="price">VND 100.000 <span>120.000</span></div>
+          <a href="" class="btns">Thêm vào giỏ hàng</a>
+        </div>
+        <div class="box">
+          <img src="img/culi.jpg" alt="" />
+          <h3>Culi</h3>
+          <div class="price">VND 100.000 <span>120.000</span></div>
+          <a href="" class="btns">Thêm vào giỏ hàng</a>
+        </div>
+        <div class="box">
+          <img src="img/mocha.jpg" alt="" />
+          <h3>Mocha</h3>
+          <div class="price">VND 100.000 <span>120.000</span></div>
+          <a href="" class="btns">Thêm vào giỏ hàng</a>
+        </div>
+      </div>
     </section>
 
     <!-- Product Section -->
     <section class="product" id="product">
-        <div class="section-title">
-            <h1><span>Product </span></h1>
+      <div class="section-title">
+        <h1><span>Product </span></h1>
+      </div>
+      <div class="box-grid">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="uil uil-shopping-cart"></a>
+            <a href="#" class="uil uil-heart"></a>
+            <a href="#" class="uil uil-eye"></a>
+          </div>
+          <div class="img">
+            <img src="img/arabica.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Fresh Coffee</h3>
+            <div class="start">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="price">VND 100.000 <span>120.000</span></div>
+          </div>
         </div>
-        <div class="box-grid">
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="uil uil-shopping-cart"></a>
-                    <a href="#" class="uil uil-heart"></a>
-                    <a href="#" class="uil uil-eye"></a>
-                </div>
-                <div class="img">
-                    <img src="img/arabica.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Fresh Coffee</h3>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <div class="price">VND 100.000 <span>120.000</span></div>
-                </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="uil uil-shopping-cart"></a>
+            <a href="#" class="uil uil-heart"></a>
+            <a href="#" class="uil uil-eye"></a>
+          </div>
+          <div class="img">
+            <img src="img/robusta.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Fresh Coffee</h3>
+            <div class="start">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
             </div>
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="uil uil-shopping-cart"></a>
-                    <a href="#" class="uil uil-heart"></a>
-                    <a href="#" class="uil uil-eye"></a>
-                </div>
-                <div class="img">
-                    <img src="img/robusta.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Fresh Coffee</h3>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <div class="price">VND 100.000 <span>120.000</span></div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="uil uil-shopping-cart"></a>
-                    <a href="#" class="uil uil-heart"></a>
-                    <a href="#" class="uil uil-eye"></a>
-                </div>
-                <div class="img">
-                    <img src="img/culi.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Fresh Coffee</h3>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <div class="price">VND 100.000 <span>120.000</span></div>
-                </div>
-            </div>
-
+            <div class="price">VND 100.000 <span>120.000</span></div>
+          </div>
         </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="uil uil-shopping-cart"></a>
+            <a href="#" class="uil uil-heart"></a>
+            <a href="#" class="uil uil-eye"></a>
+          </div>
+          <div class="img">
+            <img src="img/culi.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Fresh Coffee</h3>
+            <div class="start">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="price">VND 100.000 <span>120.000</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Review Section -->
     <section class="review" id="review">
-        <div class="section-title">
-            <h1><span>Khách hàng </span>review</h1>
+      <div class="section-title">
+        <h1><span>Khách hàng </span>review</h1>
+      </div>
+      <div class="box-grid">
+        <div class="box">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <img
+            src="https://4kwallpapers.com/images/walls/thumbs_3t/261.jpg"
+            alt=""
+            class="user"
+          />
+          <h3>AAA</h3>
+          <div class="start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+          </div>
         </div>
-        <div class="box-grid">
-            <div class="box">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,</p>
-                <img src="https://4kwallpapers.com/images/walls/thumbs_3t/261.jpg" alt="" class="user">
-                <h3>AAA</h3>
-                <div class="start">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-            <div class="box">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,</p>
-                <img src="https://4kwallpapers.com/images/walls/thumbs_3t/261.jpg" alt="" class="user">
-                <h3>AAA</h3>
-                <div class="start">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-            <div class="box">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,</p>
-                <img src="https://4kwallpapers.com/images/walls/thumbs_3t/261.jpg" alt="" class="user">
-                <h3>AAA</h3>
-                <div class="start">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
+        <div class="box">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <img
+            src="https://4kwallpapers.com/images/walls/thumbs_3t/261.jpg"
+            alt=""
+            class="user"
+          />
+          <h3>AAA</h3>
+          <div class="start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+          </div>
         </div>
+        <div class="box">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <img
+            src="https://4kwallpapers.com/images/walls/thumbs_3t/261.jpg"
+            alt=""
+            class="user"
+          />
+          <h3>AAA</h3>
+          <div class="start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <div class="section-title">
-            <h1><span>Liên hệ </span></h1>
-        </div>
-        <div class="row">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.0642061394983!2d109.18921241524218!3d12.243931933738185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170677f0211b3df%3A0xd13f9587811bf005!2zMjdhIEzDqiBRdcO9IMSQw7RuLCBUw6JuIEzhuq1wLCBUaMOgbmggcGjhu5EgTmhhIFRyYW5nLCBLaMOhbmggSMOyYSA2NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1629542531317!5m2!1sen!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <form action="">
-                <h3>Liên hệ với chúng tôi</h3>
-                <div class="input-box">
-                    <span class="uil uil-user"></span>
-                    <input type="text" placeholder="name">
-                </div>
-                <div class="input-box">
-                    <span class="uil uil-envelope"></span>
-                    <input type="email" placeholder="email">
-                </div>
-                <div class="input-box">
-                    <span class="uil uil-mobile-android"></span>
-                    <input type="number" placeholder="Phone number">
-                </div>
-                <input type="submit" value="contact now" class="btns">
-            </form>
-        </div>
+      <div class="section-title">
+        <h1><span>Liên hệ </span></h1>
+      </div>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.0642061394983!2d109.18921241524218!3d12.243931933738185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170677f0211b3df%3A0xd13f9587811bf005!2zMjdhIEzDqiBRdcO9IMSQw7RuLCBUw6JuIEzhuq1wLCBUaMOgbmggcGjhu5EgTmhhIFRyYW5nLCBLaMOhbmggSMOyYSA2NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1629542531317!5m2!1sen!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <form action="">
+          <h3>Liên hệ với chúng tôi</h3>
+          <div class="input-box">
+            <span class="uil uil-user"></span>
+            <input type="text" placeholder="name" />
+          </div>
+          <div class="input-box">
+            <span class="uil uil-envelope"></span>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="input-box">
+            <span class="uil uil-mobile-android"></span>
+            <input type="number" placeholder="Phone number" />
+          </div>
+          <input type="submit" value="contact now" class="btns" />
+        </form>
+      </div>
     </section>
 
     <!-- Blog Section -->
     <section class="blog" id="blog">
-        <div class="section-title">
-            <h1><span>Blog </span></h1>
+      <div class="section-title">
+        <h1><span>Blog </span></h1>
+      </div>
+      <div class="box-grid">
+        <div class="box">
+          <div class="img">
+            <img
+              src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <a href="" class="title">Tasty n' refreshing coffee</a>
+            <span>by admin / 21 aug, 2021</span>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+            <a href="" class="btns">Read more</a>
+          </div>
         </div>
-        <div class="box-grid">
-            <div class="box">
-                <div class="img">
-                    <img src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                </div>
-                <div class="content">
-                    <a href="" class="title">Tasty n' refreshing coffee</a>
-                    <span>by admin / 21 aug, 2021</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,</p>
-                    <a href="" class="btns">Read more</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="https://images.pexels.com/photos/2074122/pexels-photo-2074122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                </div>
-                <div class="content">
-                    <a href="" class="title">Tasty n' refreshing coffee</a>
-                    <span>by admin / 21 aug, 2021</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,</p>
-                    <a href="" class="btns">Read more</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="https://images.pexels.com/photos/373948/pexels-photo-373948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                </div>
-                <div class="content">
-                    <a href="" class="title">Tasty n' refreshing coffee</a>
-                    <span>by admin / 21 aug, 2021</span>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,</p>
-                    <a href="" class="btns">Read more</a>
-                </div>
-            </div>
+        <div class="box">
+          <div class="img">
+            <img
+              src="https://images.pexels.com/photos/2074122/pexels-photo-2074122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <a href="" class="title">Tasty n' refreshing coffee</a>
+            <span>by admin / 21 aug, 2021</span>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+            <a href="" class="btns">Read more</a>
+          </div>
         </div>
+        <div class="box">
+          <div class="img">
+            <img
+              src="https://images.pexels.com/photos/373948/pexels-photo-373948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <a href="" class="title">Tasty n' refreshing coffee</a>
+            <span>by admin / 21 aug, 2021</span>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+            <a href="" class="btns">Read more</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="socials">
-            <a href="" class="uil uil-facebook-f"></a>
-            <a href="" class="uil uil-youtube"></a>
-            <a href="" class="uil uil-instagram-alt"></a>
-            <a href="" class="uil uil-twitter"></a>
-        </div>
-        <div class="links">
-            <a href="">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#product">Product</a>
-            <a href="#review">Review</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="credit">
-            Created by <span>Benjamin Le</span> | All rights reserved.
-        </div>
+      <div class="socials">
+        <a href="" class="uil uil-facebook-f"></a>
+        <a href="" class="uil uil-youtube"></a>
+        <a href="" class="uil uil-instagram-alt"></a>
+        <a href="" class="uil uil-twitter"></a>
+      </div>
+      <div class="links">
+        <a href="">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#product">Product</a>
+        <a href="#review">Review</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="credit">
+        Created by <span>Baotinsolutions 2021</span> | All rights reserved.
+      </div>
     </footer>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
